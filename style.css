@@ -348,17 +348,9 @@ a {
   object-position: center;
   transform: scale(1.42);
 }
-.live-preview {
-  position: relative;
-  overflow: hidden;
-}
-.live-preview iframe {
-  width: 1600px;
-  height: 1000px;
-  border: 0;
-  pointer-events: none;
-  transform: scale(0.29);
-  transform-origin: top left;
+.cat-visual {
+  object-fit: cover;
+  object-position: center top;
 }
 .case-copy h3 {
   margin: 28px 0 12px;
