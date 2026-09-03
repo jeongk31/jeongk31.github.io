@@ -1,186 +1,647 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeong Kyu's Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Header -->
-    <section id="header">
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-1 mb-2 border-bottom">
-              <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./images/box.svg" class="bi me-2" width="40" height="32">
-                <span class="fs-4" style="margin-left: 1vh; font-family: 'Apple Chancery', cursive;">JKL</span>
-              </a>
-        
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#title" class="nav-link active" aria-current="page" style="color: black; padding-left: 1vh; padding-right: 1vh; padding-top: 0.4vh; padding-bottom: 0.4vh; margin-right: 1vh;">Home</a></li>
-                <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#my-projects" class="nav-link">My Projects</a></li>
-                <li class="nav-item"><a href="./photo_gallery.html" class="nav-link">Photo Gallery</a></li>
-                <li class="nav-item"><a href="#footer" class="nav-link">Contact Me</a></li>
-              </ul>
-            </header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jeong Kyu Lee — Junior Research Scientist at SSEL and founder of Loop Dimension."
+    />
+    <title>Jeong Kyu Lee — Research & Industry</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="name" href="#content">Jeong Kyu Lee</a>
+      <button
+        class="menu-button"
+        data-menu
+        aria-expanded="false"
+        aria-label="Open navigation"
+      >
+        Menu
+      </button>
+      <nav data-nav>
+        <a href="#profile">Profile</a><a href="#experience">Experience</a
+        ><a href="#research">Research</a><a href="#selected-work">Projects</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="intro wrap" id="profile">
+        <div class="intro-main">
+          <p class="kicker">Research scientist · Software solution architect</p>
+          <h1>Research, software, and the work between them.</h1>
+          <p class="summary">
+            I’m a Junior Research Scientist at NYU Abu Dhabi’s Social Science
+            Experimental Laboratory and the founder of Loop Dimension. My work
+            combines computational research with the practical work of planning
+            and building software.
+          </p>
+          <div class="intro-links">
+            <a class="primary-link" href="Jeong Kyu CV.pdf" target="_blank"
+              >Download CV ↗</a
+            ><a href="mailto:jkl499@nyu.edu">jkl499@nyu.edu</a>
           </div>
-    </section>
-    <!-- Title Section -->
-    <section id="title">
-        <div class="home-background">
-            <div class="px-4 py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="./images/laptop.svg" alt="" width="140" height="80" style="margin-top: 7vh">
-                <h1 class="display-5 fw-bold text-body-emphasis1" style="margin-top: 2vh">
-                    <span class="typing-animation">I'm Jeong Kyu.</span>
-                </h1>
-                <div class="col-lg-6 mx-auto">
-                    <h2 class="lead mb-4" style="margin-top: 1vh;">
-                        <span class="typing-animation">a <span class="pro">pro</span>grammer.</span>
-                    </h2>
-                </div>
-            </div>
         </div>
-    </section>
-
-
-    <!-- About me Section -->
-    <section id="about-me">
-        <div class="px-4 py-5 my-5 text-center">
-            <div class="image-wrapper">
-                <img class="d-block mx-auto mb-4" src="./images/portrait.jpg" alt="my-portrait" width="160.4" height="165.2" style="border-radius: 50%;">
-            </div>
-                <h1 class="display-5 fw-bold text-body-emphasis2" style="margin-top: 3vh;">Hello!</h1>
-            <div class="col-lg-6 mx-auto">
-            <p class="intro-text lead mb-4">I am a Software Engineer and Developer. My main research interest is Machine Learning and Artificial Intelligence. I also love Photography.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="./Jeong Kyu Resume.pdf" class="btn btn-primary1 btn-lg px-4 gap-3" role="button" target="_blank" style="margin-top: 10px">View Resume</a>
-                <a href="./Jeong Kyu CV.pdf" class="btn btn-primary1 btn-lg px-4 gap-3" role="button" target="_blank" style="margin-top: 10px">View Full CV</a>
-
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Projects Section -->
-    <!-- <section id="my-projects" style="margin-top: 50px;">
-        <main>
-            <section class="py-0 mt-0 text-center container">
-              <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                  <h1 class="fw-light" style="color:white">My Projects</h1>
-                  <p class="lead text-body-secondary" style="padding-top: 20px;">These are some examples of my projects. If you would like to see more, please click on the 'View More' button below. Enjoy!</p>
-                </div>
-              </div>
-            </section>
-          
-            <div class="album py-5 bg-body-tertiary">
-              <div class="container">
-          
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <img src="./lucys_adventure/preview.png" class="lucy-img card-img-top" width="100%" height="225" alt="Lucy's adventure">
-                      <div class="card-body">
-                        <p class="card-text">Lucy's adventure (Game)</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <a href="./lucys_adventure/main.html">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            </a>                          
-                          </div>
-                          <small class="text-body-secondary">Javascript (p5.js), HTML, CSS</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <img src="./traders_tycoon/preview.png" class="traders-img card-img-top" width="100%" height="225" alt="Trader's Tycoon">
-                      <div class="card-body">
-                        <p class="card-text">Trader's Tycoon</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <a href="./traders_tycoon/index.html">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            </a>  
-                          </div>
-                          <small class="text-body-secondary">Javascript (p5.js), HTML, CSS</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Working...</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">Working...</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          </div>
-                          <small class="text-body-secondary">Python</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="text-center" style="margin-top: 4vh;">
-                    <a href="#" class="btn btn-primary1 my-2 fixed-size-button">View More</a>
-                </div>                
-              </div>
-            </div>
-          </main>
-    </section>
-    <script src="script.js"></script> -->
-
-    <!-- Footer -->
-    <section id="footer" style="margin-top: -50px;">
-        <div class="container">
-            <div class="row" style="padding-bottom: 50px;">
-                <div class="col-12 text-center" style="padding-bottom: 40px">
-                    <h1 style="font-size: 60px; color:#FFF">GET IN TOUCH</h1>
-                </div>
-                <div class="col-6 col-lg-4 offset-lg-2 d-flex flex-column align-items-center justify-content-center">
-                    <div class="d-flex justify-content-center align-items-center rounded-circle" style="width: 140px; height: 140px; background: var(--bs-secondary-color); margin-bottom: 20px;">
-                        <img src="./images/mail.svg" alt="Telephone" style="fill: white; width: 70px; height: 70px;" />
-                    </div>
-                    <h2 class="fw-normal" style="color:white; margin-bottom: 12px;">EMAIL</h2>
-                    <b style="text-align: center; color: #D8DDE2;">Primary</b>
-                    <p style="text-align: center;">jeongk331@gmail.com</p>
-                    <b style="text-align: center; color: #D8DDE2;">Secondary</b>
-                    <p style="text-align: center;">jkl499@nyu.edu</p>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-6 col-lg-4 d-flex flex-column align-items-center justify-content-center">
-                    <div class="d-flex justify-content-center align-items-center rounded-circle" style="width: 140px; height: 140px; background: var(--bs-secondary-color); margin-bottom: 20px;">
-                        <img src="./images/telephone.svg" alt="Telephone" style="fill: white; width: 70px; height: 70px;" />
-                    </div>
-                    <h2 class="fw-normal" style="color:white; margin-bottom: 12px;">PHONE</h2>
-                    <b style="text-align: center; color: #D8DDE2;">United States</b>
-                    <p style="text-align: center;">(+1) 929-704-9829</p>
-                    <b style="text-align: center; color: #D8DDE2;">United Arab Emirates</b>
-                    <p style="text-align: center;">(+971) 50-478-1261</p>
-                  </div>
-              </div>
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© Jeong Kyu Lee</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="icon-mail" href="mailto:jeongk331@gmail.com"><img class="bi" width="24" height="24" src="./images/mail.svg"></a></li>
-                <li class="ms-3"><a class="icon-linkedin" href="https://www.linkedin.com/in/jeong-kyu-lee-817803233/"><img class="bi" width="24" height="24" src="./images/linkedin.svg"></a></li>
-                <li class="ms-3"><a class="icon-instagram" href="https://www.instagram.com/jeongkyu31/"><img class="bi" width="24" height="24" src="./images/instagram.svg"></a></li>
-                <li class="ms-3"><a class="icon-github" href="https://github.com/jeongk31"><img class="bi" width="24" height="24" src="./images/github.svg"></a></li>
-            </ul>
-            </footer>
+        <dl class="quick-facts">
+          <div>
+            <dt>Current research</dt>
+            <dd>
+              Interdisciplinary research connecting computer science, economics,
+              and computational methods
+            </dd>
           </div>
-    </section>
-</body>
+          <div>
+            <dt>Industry work</dt>
+            <dd>
+              Product planning, software architecture, client and engineering
+              coordination
+            </dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>
+              B.S. Computer Science, Applied Mathematics minor, NYU Abu Dhabi
+            </dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Abu Dhabi, United Arab Emirates</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="cv-section wrap" id="experience">
+        <div class="section-title">
+          <p>01</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="section-content">
+          <div class="filters" aria-label="Filter experience">
+            <button class="active" data-filter="all">All</button
+            ><button data-filter="research">Research</button
+            ><button data-filter="industry">Industry</button>
+          </div>
+          <div class="timeline">
+            <article class="entry" data-type="research">
+              <div class="date">2025—Present</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Junior Research Scientist</h3>
+                    <p>SSEL · NYU Abu Dhabi</p>
+                  </div>
+                  <span>Research</span>
+                </div>
+                <p>
+                  Develop research software and computational workflows for
+                  experimental economics. Current work includes CAT, a complete
+                  platform for LLM-assisted coding of communication data.
+                </p>
+                <ul>
+                  <li>
+                    Designed and built CAT from scratch, from dataset ingestion
+                    and codebook design to model execution and result export.
+                  </li>
+                  <li>
+                    Support experimental design, implementation, data
+                    collection, and analysis across research projects.
+                  </li>
+                </ul>
+                <div class="entry-links">
+                  <a
+                    href="https://ssel.chatkit.nyuad.nyu.edu/"
+                    target="_blank"
+                    rel="noopener"
+                    >Open CAT ↗</a
+                  ><a href="#publications">Related papers ↓</a>
+                </div>
+              </div>
+            </article>
+            <article class="entry" data-type="industry">
+              <div class="date">2024—Present</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Founder & CEO</h3>
+                    <p>Loop Dimension</p>
+                  </div>
+                  <span>Industry</span>
+                </div>
+                <p>
+                  Lead a software studio delivering web, mobile, automation, and
+                  machine-learning products. I work directly with clients, turn
+                  requirements into technical plans, and coordinate design and
+                  engineering through delivery.
+                </p>
+                <ul>
+                  <li>
+                    Secured 10 contracts in the first three months and
+                    established three ongoing company partnerships.
+                  </li>
+                  <li>
+                    Built and led a team of five developers and designers.
+                  </li>
+                </ul>
+                <div class="entry-links">
+                  <a
+                    href="https://www.loopdimension.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Loop Dimension ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="entry" data-type="research">
+              <div class="date">2024—2025</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Research Assistant</h3>
+                    <p>
+                      Computational Biology & Bioinformatics Lab · NYU Abu Dhabi
+                    </p>
+                  </div>
+                  <span>Research</span>
+                </div>
+                <p>
+                  Developed a machine-learning screening approach for lung
+                  adenocarcinoma using gut and lung microbiome data, feature
+                  selection, and classification models.
+                </p>
+              </div>
+            </article>
+            <article class="entry" data-type="research">
+              <div class="date">2024—2025</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Research Assistant</h3>
+                    <p>Computational Solid Mechanics Lab · NYU Abu Dhabi</p>
+                  </div>
+                  <span>Research</span>
+                </div>
+                <p>
+                  Built interactive 3D visualization for structural digital
+                  twins, integrating sensor streams, structural models, and
+                  time-series playback using VTK and PyQt5.
+                </p>
+              </div>
+            </article>
+            <article class="entry" data-type="industry">
+              <div class="date">2024</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Software & AI Engineering</h3>
+                    <p>Storybutton · Airev · Geaux Network</p>
+                  </div>
+                  <span>Industry</span>
+                </div>
+                <p>
+                  Worked across family-audio products, AI tools using Dubai
+                  public data, and full-stack product improvements. Shipped
+                  user-facing features while working with design, engineering,
+                  and business teams.
+                </p>
+              </div>
+            </article>
+            <article class="entry" data-type="research">
+              <div class="date">2023</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Undergraduate Visiting Scholar</h3>
+                    <p>High-Performance Computing Lab · NYU Tandon</p>
+                  </div>
+                  <span>Research</span>
+                </div>
+                <p>
+                  Implemented and documented BERT-Large MLPerf Inference
+                  benchmarks on the NYU Greene cluster, including resource
+                  allocation and A100 GPU utilization.
+                </p>
+              </div>
+            </article>
+            <article class="entry" data-type="industry">
+              <div class="date">2023</div>
+              <div class="entry-body">
+                <div class="entry-heading">
+                  <div>
+                    <h3>Research & Development Intern</h3>
+                    <p>FortyGuard</p>
+                  </div>
+                  <span>Industry</span>
+                </div>
+                <p>
+                  Studied five target regions, helped process more than 10 GB of
+                  climate data, and contributed to machine-learning and external
+                  API data pipelines.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section wrap" id="research">
+        <div class="section-title">
+          <p>02</p>
+          <h2>Research</h2>
+        </div>
+        <div class="section-content" id="publications">
+          <h3 class="subhead">Publications & working papers</h3>
+          <ol class="publication-list">
+            <li>
+              <div class="pub-year">2026</div>
+              <div>
+                <span class="status">Working paper · SSRN</span>
+                <h3>
+                  CAT: An LLM-based Tool for Content Analysis in Experimental
+                  Economics
+                </h3>
+                <p>
+                  Public working paper accompanying the Communication Annotation
+                  Tool.
+                </p>
+                <a
+                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7370379"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper ↗</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="pub-year">2026</div>
+              <div>
+                <span class="status">Working paper · SSRN</span>
+                <h3>
+                  Are LLMs Reliable Coders of Communication Content in Economic
+                  Experiments?
+                </h3>
+                <p>Andrzej Baranski, David J. Cooper, and Jeong Kyu Lee</p>
+                <a
+                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7129638"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper ↗</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="pub-year">2025</div>
+              <div>
+                <span class="status">Peer-reviewed conference paper</span>
+                <h3>
+                  Machine Learning-Based Screening Tool for Lung Adenocarcinoma
+                  Via Gut Microbiome Analysis
+                </h3>
+                <p>Jeong Kyu Lee and Mai Oudah</p>
+                <ul class="publication-venues">
+                  <li>
+                    IEEE EMBS International Conference on Biomedical and Health
+                    Informatics (BHI), 2025
+                  </li>
+                  <li>
+                    International Work-Conference on Bioinformatics and
+                    Biomedical Engineering (IWBBIO), 2025
+                  </li>
+                </ul>
+                <a
+                  href="https://openreview.net/pdf?id=oYdS3Ti7IR"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper ↗</a
+                >
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="cv-section wrap" id="selected-work">
+        <div class="section-title">
+          <p>03</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="section-content case-list">
+          <p class="projects-note">
+            Each case study separates the system itself from my contribution.
+            Loop Dimension projects reflect my role leading discovery, scoping,
+            technical planning, and delivery with the design and engineering
+            team.
+          </p>
+
+          <article class="case-study">
+            <div class="case-visual live-preview">
+              <iframe
+                src="https://ssel.chatkit.nyuad.nyu.edu/"
+                title="Live preview of CAT — Communication Annotation Tool"
+                loading="lazy"
+                tabindex="-1"
+              ></iframe>
+            </div>
+            <div class="case-copy">
+              <div class="project-top">
+                <span>SSEL · Research software · Current</span
+                ><a
+                  href="https://ssel.chatkit.nyuad.nyu.edu/"
+                  target="_blank"
+                  rel="noopener"
+                  >Open CAT ↗</a
+                >
+              </div>
+              <h3>CAT — Communication Annotation Tool</h3>
+              <p class="case-summary">
+                An end-to-end platform for coding communication data in economic
+                experiments with one or more language models.
+              </p>
+              <dl class="contribution">
+                <div>
+                  <dt>My contribution</dt>
+                  <dd>
+                    Designed and developed the full system from scratch: data
+                    ingestion, episode mapping, codebook configuration,
+                    experiment context, multi-model execution, result review,
+                    export, documentation, and deployment.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Research setting</dt>
+                  <dd>
+                    Built at SSEL alongside our methodological work on whether
+                    LLMs can reliably code communication content in economic
+                    experiments.
+                  </dd>
+                </div>
+                <div>
+                  <dt>System</dt>
+                  <dd>
+                    CSV and Excel import, configurable codebooks, multiple model
+                    providers and runs, browser execution, reusable local
+                    packages, and result exports.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-visual placeholder-visual">
+              <span>CSM Lab project</span
+              ><strong>3D interface screenshot to add</strong>
+            </div>
+            <div class="case-copy">
+              <div class="project-top"><span>Research · 2024—2025</span></div>
+              <h3>Structural digital twin interface</h3>
+              <p class="case-summary">
+                An interactive system for viewing structural models alongside
+                live and historical sensor data.
+              </p>
+              <dl class="contribution">
+                <div>
+                  <dt>My contribution</dt>
+                  <dd>
+                    Developed the PyQt5 and VTK interface, dynamic color
+                    mapping, time-series animation, sensor-data integration, and
+                    clickable 3D sensor markers.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Research setting</dt>
+                  <dd>
+                    Computational Solid Mechanics Lab, in a multidisciplinary
+                    Mubadala-funded project involving structural monitoring and
+                    digital twins.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Methods</dt>
+                  <dd>
+                    VTK, PyQt5, 3D visualization, accelerometer and strain-gauge
+                    data.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <img
+              class="case-visual"
+              src="images/projects/ilkkam.webp"
+              alt="Ilkkam mobile marketplace screens"
+              loading="lazy"
+            />
+            <div class="case-copy">
+              <div class="project-top">
+                <span>Loop Dimension · Mobile platform · 2025</span
+                ><a
+                  href="https://www.loopdimension.com/work/ilkkam-mobile-application"
+                  target="_blank"
+                  rel="noopener"
+                  >More details ↗</a
+                >
+              </div>
+              <h3>Ilkkam mobile marketplace</h3>
+              <p class="case-summary">
+                A full-stack marketplace where Korean home-service providers can
+                redistribute work and bid on assignments in real time.
+              </p>
+              <dl class="contribution">
+                <div>
+                  <dt>My contribution</dt>
+                  <dd>
+                    Led client discovery and scope definition, translated
+                    marketplace operations into product requirements, set the
+                    delivery plan, and coordinated the design and development
+                    team through launch.
+                  </dd>
+                </div>
+                <div>
+                  <dt>System</dt>
+                  <dd>
+                    Job listings, bidding, reviews, real-time chat, push
+                    notifications, location-aware services, and deployment
+                    infrastructure.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Delivery</dt>
+                  <dd>90-day engagement.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <img
+              class="case-visual"
+              src="images/projects/lg-hsad-ocr.webp"
+              alt="LG HS Ad image processing and OCR interface"
+              loading="lazy"
+            />
+            <div class="case-copy">
+              <div class="project-top">
+                <span>Loop Dimension · AI/ML · 2024</span
+                ><a
+                  href="https://www.loopdimension.com/work/lg-hs-ad-ai-ocr-solution"
+                  target="_blank"
+                  rel="noopener"
+                  >More details ↗</a
+                >
+              </div>
+              <h3>LG HS Ad AI OCR solution</h3>
+              <p class="case-summary">
+                A marketing workflow combining product-data collection, OCR, and
+                image inpainting.
+              </p>
+              <dl class="contribution">
+                <div>
+                  <dt>My contribution</dt>
+                  <dd>
+                    Worked between the client and technical team to define the
+                    workflow, break requirements into deliverable components,
+                    coordinate implementation, and manage review and delivery.
+                  </dd>
+                </div>
+                <div>
+                  <dt>System</dt>
+                  <dd>
+                    Web scraping, text detection, interactive image marking,
+                    LaMa-based inpainting, and batch processing.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Delivery</dt>
+                  <dd>75-day engagement.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <img
+              class="case-visual"
+              src="images/projects/antibiotic-system.webp"
+              alt="Clinical antibiotic recommendation software interface"
+              loading="lazy"
+            />
+            <div class="case-copy">
+              <div class="project-top">
+                <span>Loop Dimension · Clinical software · 2025</span
+                ><a
+                  href="https://www.loopdimension.com/work/antibiotic-recommendation-system"
+                  target="_blank"
+                  rel="noopener"
+                  >More details ↗</a
+                >
+              </div>
+              <h3>Antibiotic recommendation system</h3>
+              <p class="case-summary">
+                A government-funded clinical decision-support system that
+                recommends antibiotics from patient, diagnosis, laboratory, and
+                pathogen data.
+              </p>
+              <dl class="contribution">
+                <div>
+                  <dt>My contribution</dt>
+                  <dd>
+                    Led requirements clarification and technical planning,
+                    coordinated the implementation team, and managed the path
+                    from clinical workflow to delivered software.
+                  </dd>
+                </div>
+                <div>
+                  <dt>System</dt>
+                  <dd>
+                    Multi-stage matching across diagnosis, pathogens, renal
+                    function, dialysis status, and allergies, with patient
+                    management and administrative tools.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Delivery</dt>
+                  <dd>21-day engagement.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cv-section wrap" id="education">
+        <div class="section-title">
+          <p>04</p>
+          <h2>Education & skills</h2>
+        </div>
+        <div class="section-content">
+          <div class="education">
+            <div class="date">2019—2025</div>
+            <div>
+              <h3>New York University Abu Dhabi</h3>
+              <p>
+                B.S. Computer Science · Minor in Applied Mathematics · GPA 3.9 /
+                4.0
+              </p>
+              <p>
+                Full undergraduate scholarship. Capstone: machine-learning-based
+                screening for lung cancer detection.
+              </p>
+            </div>
+          </div>
+          <dl class="skills">
+            <div>
+              <dt>Research</dt>
+              <dd>
+                Machine learning, statistical analysis, experimental systems,
+                scientific visualization, data pipelines
+              </dd>
+            </div>
+            <div>
+              <dt>Programming</dt>
+              <dd>Python, R, JavaScript, SQL, C, C++, React, Flask</dd>
+            </div>
+            <div>
+              <dt>Technical work</dt>
+              <dd>
+                Product planning, software architecture, stakeholder
+                communication, Git, Docker, APIs
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <p class="kicker">Contact</p>
+          <h2>
+            Research, technical work,<br />or a conversation about either.
+          </h2>
+          <a class="contact-email" href="mailto:jkl499@nyu.edu"
+            >jkl499@nyu.edu ↗</a
+          >
+          <div class="social">
+            <a href="https://github.com/jeongk31" target="_blank">GitHub</a
+            ><a
+              href="https://www.linkedin.com/in/jeong-kyu-lee-817803233/"
+              target="_blank"
+              >LinkedIn</a
+            ><a href="Jeong Kyu CV.pdf" target="_blank">Full CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <span>© <b data-year></b> Jeong Kyu Lee</span
+      ><a href="#content">Back to top ↑</a>
+    </footer>
+  </body>
 </html>
